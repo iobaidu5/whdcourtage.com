@@ -1,0 +1,732 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./assets/js/popper.min.js"></script>
+    <script defer src="./assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <title></title>
+<meta property="og:title" content="" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="" />
+<meta property="og:description" content="" />
+<meta name="keywords" content="" />
+<link rel="canonical" href="http://localhost:4000/devis-moto-auto" />
+<meta property="og:url" content="http://localhost:4000/devis-moto-auto" />
+<meta property="og:site_name" content="BHInternet" />
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"url":"http://localhost:4000/devis-moto-auto",
+"description":"",
+"name":""
+}
+</script>
+
+</head>
+
+  <body>
+    <section class="Navbar navbar-main Navbar">
+    <nav class="navbar navbar-expand-lg Navbar p-0">
+        <div class="container-fluid">
+            <div class="Navbar_image">
+                <a href="./index.html"><img src="./assets/img/logo.png" class="Navbar_image-img"
+                        alt="" /></a>
+            </div>
+            <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars fa-2x toggle-button" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+                <ul class="navbar-nav Navbar_nav ml-auto">
+                    <li class="nav-item Navbar_nav-item">
+                        <a class="nav-link Navbar_nav-link" href="./index.html">ACCUEIL</a>
+                    </li>
+                    <li class="nav-item Navbar_nav-item">
+                        <a class="nav-link Navbar_nav-link" href="./assurance-decennale.html">ASSURANCE DÉCENNALE</a>
+                    </li>
+                    <li class="nav-item Navbar_nav-item">
+                        <a class="nav-link Navbar_nav-link" href="./complementaire-sante.html">COMPLÉMENTAIRE SANTÉ</a>
+                    </li>
+                    <li class="nav-item Navbar_nav-item">
+                        <a class="nav-link Navbar_nav-link" href="./contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item Navbar_nav-item">
+                        <a class="nav-link Navbar_nav-btn" href="./devis.html">DEVIS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+    
+
+    <div class="">
+        <section class="banner">
+    <div class="container-fluid">
+        <div class="banner_content">
+            <h1 class="banner_content-title">DEVIS GRATUIT ASSURANCE AUTO/MOTO</h1>
+        </div>
+    </div>
+</section>
+<section class="devis devis_form">
+    <div class="container">
+        <h2 class="devis_form-title">Véhicule</h2>
+    </div>
+    <div class="container mt-5">
+        <form class="form" id="devisForm" method="post" action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
+            <input type="hidden" name="lang" value="fr">
+            <input type="hidden" name="type" value="devis">
+            <input type="hidden" name="firstName" value="" />
+            <input type="hidden" name="website" value="184">
+            <input type="hidden" name="redirectUrl" value="/">
+            <input type="hidden" name="redirectUrl" value="/" />
+            <input type="hidden" name="key" value="">
+            <input type="hidden" name="website" value="184" />
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="immatriculation" class="devis_form-label">1ère immatriculation</label>
+                                <input type="date" class="devis_form-input" id="immatriculation" name="immatriculation"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name" class="devis_form-label">Marque</label>
+                                <select name="marque" id="marque" class="devis_form-input disabled" disabled>
+                                    <option value="" selected="selected">- Choisir -</option>
+                                    <option value="ALEKO">ALEKO</option>
+                                    <option value="ALFA ROMEO">ALFA ROMEO</option>
+                                    <option value="ALPINE RENAULT">ALPINE RENAULT</option>
+                                    <option value="ARO">ARO</option>
+                                    <option value="ASIA">ASIA</option>
+                                    <option value="ASTON MARTIN">ASTON MARTIN</option>
+                                    <option value="AUDI">AUDI</option>
+                                    <option value="AUSTIN">AUSTIN</option>
+                                    <option value="AUTOBIANCHI">AUTOBIANCHI</option>
+                                    <option value="AUVERLAND">AUVERLAND</option>
+                                    <option value="BEDFORD">BEDFORD</option>
+                                    <option value="BEE BEE AUTOMOTIVE">BEE BEE AUTOMOTIVE</option>
+                                    <option value="BENTLEY">BENTLEY</option>
+                                    <option value="BERTONE">BERTONE</option>
+                                    <option value="BMW">BMW</option>
+                                    <option value="BUICK">BUICK</option>
+                                    <option value="CADILLAC">CADILLAC</option>
+                                    <option value="CHEVROLET">CHEVROLET</option>
+                                    <option value="CHRYSLER">CHRYSLER</option>
+                                    <option value="CITROEN">CITROEN</option>
+                                    <option value="COURB">COURB</option>
+                                    <option value="CUPRA">CUPRA</option>
+                                    <option value="DACIA">DACIA</option>
+                                    <option value="DAEWOO">DAEWOO</option>
+                                    <option value="DAF">DAF</option>
+                                    <option value="DAIHATSU">DAIHATSU</option>
+                                    <option value="DAIMLER">DAIMLER</option>
+                                    <option value="DATSUN">DATSUN</option>
+                                    <option value="DODGE">DODGE</option>
+                                    <option value="DS">DS</option>
+                                    <option value="EBRO">EBRO</option>
+                                    <option value="FIAT">FIAT</option>
+                                    <option value="FISKER">FISKER</option>
+                                    <option value="FORD">FORD</option>
+                                    <option value="FSO-POLSKI">FSO-POLSKI</option>
+                                    <option value="GAC GONOW">GAC GONOW</option>
+                                    <option value="GME">GME</option>
+                                    <option value="GRANDIN">GRANDIN</option>
+                                    <option value="HONDA">HONDA</option>
+                                    <option value="HYUNDAI">HYUNDAI</option>
+                                    <option value="INFINITI">INFINITI</option>
+                                    <option value="INNOCENTI">INNOCENTI</option>
+                                    <option value="ISUZU">ISUZU</option>
+                                    <option value="IVECO">IVECO</option>
+                                    <option value="JAGUAR">JAGUAR</option>
+                                    <option value="JEEP">JEEP</option>
+                                    <option value="KIA">KIA</option>
+                                    <option value="LADA">LADA</option>
+                                    <option value="LANCIA">LANCIA</option>
+                                    <option value="LAND ROVER">LAND ROVER</option>
+                                    <option value="LDV">LDV</option>
+                                    <option value="LEXUS">LEXUS</option>
+                                    <option value="LOTUS">LOTUS</option>
+                                    <option value="MAHINDRA">MAHINDRA</option>
+                                    <option value="MAN">MAN</option>
+                                    <option value="MARUTI">MARUTI</option>
+                                    <option value="MASERATI">MASERATI</option>
+                                    <option value="MATRA">MATRA</option>
+                                    <option value="MAZDA">MAZDA</option>
+                                    <option value="MCC">MCC</option>
+                                    <option value="MEGA">MEGA</option>
+                                    <option value="MERCEDES">MERCEDES</option>
+                                    <option value="MG">MG</option>
+                                    <option value="MIA">MIA</option>
+                                    <option value="MINI">MINI</option>
+                                    <option value="MITSUBISHI">MITSUBISHI</option>
+                                    <option value="MPM MOTORS">MPM MOTORS</option>
+                                    <option value="NISSAN">NISSAN</option>
+                                    <option value="OPEL">OPEL</option>
+                                    <option value="PANHARD">PANHARD</option>
+                                    <option value="PEUGEOT">PEUGEOT</option>
+                                    <option value="PIAGGIO">PIAGGIO</option>
+                                    <option value="PONTIAC">PONTIAC</option>
+                                    <option value="PORSCHE">PORSCHE</option>
+                                    <option value="PROTON">PROTON</option>
+                                    <option value="RENAULT">RENAULT</option>
+                                    <option value="ROVER">ROVER</option>
+                                    <option value="SAAB">SAAB</option>
+                                    <option value="SANTANA">SANTANA</option>
+                                    <option value="SEAT">SEAT</option>
+                                    <option value="SKODA">SKODA</option>
+                                    <option value="SMART">SMART</option>
+                                    <option value="SSANGYONG">SSANGYONG</option>
+                                    <option value="SUBARU">SUBARU</option>
+                                    <option value="SUNBEAM">SUNBEAM</option>
+                                    <option value="SUZUKI">SUZUKI</option>
+                                    <option value="TALBOT">TALBOT</option>
+                                    <option value="TATA">TATA</option>
+                                    <option value="TESLA">TESLA</option>
+                                    <option value="THINK">THINK</option>
+                                    <option value="TOYOTA">TOYOTA</option>
+                                    <option value="TRIUMPH">TRIUMPH</option>
+                                    <option value="UMM">UMM</option>
+                                    <option value="VOLKSWAGEN">VOLKSWAGEN</option>
+                                    <option value="VOLVO">VOLVO</option>
+                                    <option value="ZASTAVA">ZASTAVA</option>
+                                    <option value="ZAZ">ZAZ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="modele" class="devis_form-label">Modèle</label>
+                                <select name="modele" id="modele" class="devis_form-input disabled" disabled>
+                                    <option value="" selected="selected">- Choisir -</option>
+                                    <option value="ALEKO">ALEKO</option>
+                                    <option value="ALFA ROMEO">ALFA ROMEO</option>
+                                    <option value="ALPINE RENAULT">ALPINE RENAULT</option>
+                                    <option value="ARO">ARO</option>
+                                    <option value="ASIA">ASIA</option>
+                                    <option value="ASTON MARTIN">ASTON MARTIN</option>
+                                    <option value="AUDI">AUDI</option>
+                                    <option value="AUSTIN">AUSTIN</option>
+                                    <option value="AUTOBIANCHI">AUTOBIANCHI</option>
+                                    <option value="AUVERLAND">AUVERLAND</option>
+                                    <option value="BEDFORD">BEDFORD</option>
+                                    <option value="BEE BEE AUTOMOTIVE">BEE BEE AUTOMOTIVE</option>
+                                    <option value="BENTLEY">BENTLEY</option>
+                                    <option value="BERTONE">BERTONE</option>
+                                    <option value="BMW">BMW</option>
+                                    <option value="BUICK">BUICK</option>
+                                    <option value="CADILLAC">CADILLAC</option>
+                                    <option value="CHEVROLET">CHEVROLET</option>
+                                    <option value="CHRYSLER">CHRYSLER</option>
+                                    <option value="CITROEN">CITROEN</option>
+                                    <option value="COURB">COURB</option>
+                                    <option value="CUPRA">CUPRA</option>
+                                    <option value="DACIA">DACIA</option>
+                                    <option value="DAEWOO">DAEWOO</option>
+                                    <option value="DAF">DAF</option>
+                                    <option value="DAIHATSU">DAIHATSU</option>
+                                    <option value="DAIMLER">DAIMLER</option>
+                                    <option value="DATSUN">DATSUN</option>
+                                    <option value="DODGE">DODGE</option>
+                                    <option value="DS">DS</option>
+                                    <option value="EBRO">EBRO</option>
+                                    <option value="FIAT">FIAT</option>
+                                    <option value="FISKER">FISKER</option>
+                                    <option value="FORD">FORD</option>
+                                    <option value="FSO-POLSKI">FSO-POLSKI</option>
+                                    <option value="GAC GONOW">GAC GONOW</option>
+                                    <option value="GME">GME</option>
+                                    <option value="GRANDIN">GRANDIN</option>
+                                    <option value="HONDA">HONDA</option>
+                                    <option value="HYUNDAI">HYUNDAI</option>
+                                    <option value="INFINITI">INFINITI</option>
+                                    <option value="INNOCENTI">INNOCENTI</option>
+                                    <option value="ISUZU">ISUZU</option>
+                                    <option value="IVECO">IVECO</option>
+                                    <option value="JAGUAR">JAGUAR</option>
+                                    <option value="JEEP">JEEP</option>
+                                    <option value="KIA">KIA</option>
+                                    <option value="LADA">LADA</option>
+                                    <option value="LANCIA">LANCIA</option>
+                                    <option value="LAND ROVER">LAND ROVER</option>
+                                    <option value="LDV">LDV</option>
+                                    <option value="LEXUS">LEXUS</option>
+                                    <option value="LOTUS">LOTUS</option>
+                                    <option value="MAHINDRA">MAHINDRA</option>
+                                    <option value="MAN">MAN</option>
+                                    <option value="MARUTI">MARUTI</option>
+                                    <option value="MASERATI">MASERATI</option>
+                                    <option value="MATRA">MATRA</option>
+                                    <option value="MAZDA">MAZDA</option>
+                                    <option value="MCC">MCC</option>
+                                    <option value="MEGA">MEGA</option>
+                                    <option value="MERCEDES">MERCEDES</option>
+                                    <option value="MG">MG</option>
+                                    <option value="MIA">MIA</option>
+                                    <option value="MINI">MINI</option>
+                                    <option value="MITSUBISHI">MITSUBISHI</option>
+                                    <option value="MPM MOTORS">MPM MOTORS</option>
+                                    <option value="NISSAN">NISSAN</option>
+                                    <option value="OPEL">OPEL</option>
+                                    <option value="PANHARD">PANHARD</option>
+                                    <option value="PEUGEOT">PEUGEOT</option>
+                                    <option value="PIAGGIO">PIAGGIO</option>
+                                    <option value="PONTIAC">PONTIAC</option>
+                                    <option value="PORSCHE">PORSCHE</option>
+                                    <option value="PROTON">PROTON</option>
+                                    <option value="RENAULT">RENAULT</option>
+                                    <option value="ROVER">ROVER</option>
+                                    <option value="SAAB">SAAB</option>
+                                    <option value="SANTANA">SANTANA</option>
+                                    <option value="SEAT">SEAT</option>
+                                    <option value="SKODA">SKODA</option>
+                                    <option value="SMART">SMART</option>
+                                    <option value="SSANGYONG">SSANGYONG</option>
+                                    <option value="SUBARU">SUBARU</option>
+                                    <option value="SUNBEAM">SUNBEAM</option>
+                                    <option value="SUZUKI">SUZUKI</option>
+                                    <option value="TALBOT">TALBOT</option>
+                                    <option value="TATA">TATA</option>
+                                    <option value="TESLA">TESLA</option>
+                                    <option value="THINK">THINK</option>
+                                    <option value="TOYOTA">TOYOTA</option>
+                                    <option value="TRIUMPH">TRIUMPH</option>
+                                    <option value="UMM">UMM</option>
+                                    <option value="VOLKSWAGEN">VOLKSWAGEN</option>
+                                    <option value="VOLVO">VOLVO</option>
+                                    <option value="ZASTAVA">ZASTAVA</option>
+                                    <option value="ZAZ">ZAZ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="carburant" class="devis_form-label">Carburant</label>
+                                <select name="carburant" id="carburant" class="devis_form-input disabled" disabled>
+                                    <option value="" selected="selected">- Choisir -</option>
+                                    <option value="ALEKO">ALEKO</option>
+                                    <option value="ALFA ROMEO">ALFA ROMEO</option>
+                                    <option value="ALPINE RENAULT">ALPINE RENAULT</option>
+                                    <option value="ARO">ARO</option>
+                                    <option value="ASIA">ASIA</option>
+                                    <option value="ASTON MARTIN">ASTON MARTIN</option>
+                                    <option value="AUDI">AUDI</option>
+                                    <option value="AUSTIN">AUSTIN</option>
+                                    <option value="AUTOBIANCHI">AUTOBIANCHI</option>
+                                    <option value="AUVERLAND">AUVERLAND</option>
+                                    <option value="BEDFORD">BEDFORD</option>
+                                    <option value="BEE BEE AUTOMOTIVE">BEE BEE AUTOMOTIVE</option>
+                                    <option value="BENTLEY">BENTLEY</option>
+                                    <option value="BERTONE">BERTONE</option>
+                                    <option value="BMW">BMW</option>
+                                    <option value="BUICK">BUICK</option>
+                                    <option value="CADILLAC">CADILLAC</option>
+                                    <option value="CHEVROLET">CHEVROLET</option>
+                                    <option value="CHRYSLER">CHRYSLER</option>
+                                    <option value="CITROEN">CITROEN</option>
+                                    <option value="COURB">COURB</option>
+                                    <option value="CUPRA">CUPRA</option>
+                                    <option value="DACIA">DACIA</option>
+                                    <option value="DAEWOO">DAEWOO</option>
+                                    <option value="DAF">DAF</option>
+                                    <option value="DAIHATSU">DAIHATSU</option>
+                                    <option value="DAIMLER">DAIMLER</option>
+                                    <option value="DATSUN">DATSUN</option>
+                                    <option value="DODGE">DODGE</option>
+                                    <option value="DS">DS</option>
+                                    <option value="EBRO">EBRO</option>
+                                    <option value="FIAT">FIAT</option>
+                                    <option value="FISKER">FISKER</option>
+                                    <option value="FORD">FORD</option>
+                                    <option value="FSO-POLSKI">FSO-POLSKI</option>
+                                    <option value="GAC GONOW">GAC GONOW</option>
+                                    <option value="GME">GME</option>
+                                    <option value="GRANDIN">GRANDIN</option>
+                                    <option value="HONDA">HONDA</option>
+                                    <option value="HYUNDAI">HYUNDAI</option>
+                                    <option value="INFINITI">INFINITI</option>
+                                    <option value="INNOCENTI">INNOCENTI</option>
+                                    <option value="ISUZU">ISUZU</option>
+                                    <option value="IVECO">IVECO</option>
+                                    <option value="JAGUAR">JAGUAR</option>
+                                    <option value="JEEP">JEEP</option>
+                                    <option value="KIA">KIA</option>
+                                    <option value="LADA">LADA</option>
+                                    <option value="LANCIA">LANCIA</option>
+                                    <option value="LAND ROVER">LAND ROVER</option>
+                                    <option value="LDV">LDV</option>
+                                    <option value="LEXUS">LEXUS</option>
+                                    <option value="LOTUS">LOTUS</option>
+                                    <option value="MAHINDRA">MAHINDRA</option>
+                                    <option value="MAN">MAN</option>
+                                    <option value="MARUTI">MARUTI</option>
+                                    <option value="MASERATI">MASERATI</option>
+                                    <option value="MATRA">MATRA</option>
+                                    <option value="MAZDA">MAZDA</option>
+                                    <option value="MCC">MCC</option>
+                                    <option value="MEGA">MEGA</option>
+                                    <option value="MERCEDES">MERCEDES</option>
+                                    <option value="MG">MG</option>
+                                    <option value="MIA">MIA</option>
+                                    <option value="MINI">MINI</option>
+                                    <option value="MITSUBISHI">MITSUBISHI</option>
+                                    <option value="MPM MOTORS">MPM MOTORS</option>
+                                    <option value="NISSAN">NISSAN</option>
+                                    <option value="OPEL">OPEL</option>
+                                    <option value="PANHARD">PANHARD</option>
+                                    <option value="PEUGEOT">PEUGEOT</option>
+                                    <option value="PIAGGIO">PIAGGIO</option>
+                                    <option value="PONTIAC">PONTIAC</option>
+                                    <option value="PORSCHE">PORSCHE</option>
+                                    <option value="PROTON">PROTON</option>
+                                    <option value="RENAULT">RENAULT</option>
+                                    <option value="ROVER">ROVER</option>
+                                    <option value="SAAB">SAAB</option>
+                                    <option value="SANTANA">SANTANA</option>
+                                    <option value="SEAT">SEAT</option>
+                                    <option value="SKODA">SKODA</option>
+                                    <option value="SMART">SMART</option>
+                                    <option value="SSANGYONG">SSANGYONG</option>
+                                    <option value="SUBARU">SUBARU</option>
+                                    <option value="SUNBEAM">SUNBEAM</option>
+                                    <option value="SUZUKI">SUZUKI</option>
+                                    <option value="TALBOT">TALBOT</option>
+                                    <option value="TATA">TATA</option>
+                                    <option value="TESLA">TESLA</option>
+                                    <option value="THINK">THINK</option>
+                                    <option value="TOYOTA">TOYOTA</option>
+                                    <option value="TRIUMPH">TRIUMPH</option>
+                                    <option value="UMM">UMM</option>
+                                    <option value="VOLKSWAGEN">VOLKSWAGEN</option>
+                                    <option value="VOLVO">VOLVO</option>
+                                    <option value="ZASTAVA">ZASTAVA</option>
+                                    <option value="ZAZ">ZAZ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="carrosserie" class="devis_form-label">Carrosserie</label>
+                                <select name="carrosserie" id="carrosserie" class="devis_form-input disabled" disabled>
+                                    <option value="" selected="selected">- Choisir -</option>
+                                    <option value="ALEKO">ALEKO</option>
+                                    <option value="ALFA ROMEO">ALFA ROMEO</option>
+                                    <option value="ALPINE RENAULT">ALPINE RENAULT</option>
+                                    <option value="ARO">ARO</option>
+                                    <option value="ASIA">ASIA</option>
+                                    <option value="ASTON MARTIN">ASTON MARTIN</option>
+                                    <option value="AUDI">AUDI</option>
+                                    <option value="AUSTIN">AUSTIN</option>
+                                    <option value="AUTOBIANCHI">AUTOBIANCHI</option>
+                                    <option value="AUVERLAND">AUVERLAND</option>
+                                    <option value="BEDFORD">BEDFORD</option>
+                                    <option value="BEE BEE AUTOMOTIVE">BEE BEE AUTOMOTIVE</option>
+                                    <option value="BENTLEY">BENTLEY</option>
+                                    <option value="BERTONE">BERTONE</option>
+                                    <option value="BMW">BMW</option>
+                                    <option value="BUICK">BUICK</option>
+                                    <option value="CADILLAC">CADILLAC</option>
+                                    <option value="CHEVROLET">CHEVROLET</option>
+                                    <option value="CHRYSLER">CHRYSLER</option>
+                                    <option value="CITROEN">CITROEN</option>
+                                    <option value="COURB">COURB</option>
+                                    <option value="CUPRA">CUPRA</option>
+                                    <option value="DACIA">DACIA</option>
+                                    <option value="DAEWOO">DAEWOO</option>
+                                    <option value="DAF">DAF</option>
+                                    <option value="DAIHATSU">DAIHATSU</option>
+                                    <option value="DAIMLER">DAIMLER</option>
+                                    <option value="DATSUN">DATSUN</option>
+                                    <option value="DODGE">DODGE</option>
+                                    <option value="DS">DS</option>
+                                    <option value="EBRO">EBRO</option>
+                                    <option value="FIAT">FIAT</option>
+                                    <option value="FISKER">FISKER</option>
+                                    <option value="FORD">FORD</option>
+                                    <option value="FSO-POLSKI">FSO-POLSKI</option>
+                                    <option value="GAC GONOW">GAC GONOW</option>
+                                    <option value="GME">GME</option>
+                                    <option value="GRANDIN">GRANDIN</option>
+                                    <option value="HONDA">HONDA</option>
+                                    <option value="HYUNDAI">HYUNDAI</option>
+                                    <option value="INFINITI">INFINITI</option>
+                                    <option value="INNOCENTI">INNOCENTI</option>
+                                    <option value="ISUZU">ISUZU</option>
+                                    <option value="IVECO">IVECO</option>
+                                    <option value="JAGUAR">JAGUAR</option>
+                                    <option value="JEEP">JEEP</option>
+                                    <option value="KIA">KIA</option>
+                                    <option value="LADA">LADA</option>
+                                    <option value="LANCIA">LANCIA</option>
+                                    <option value="LAND ROVER">LAND ROVER</option>
+                                    <option value="LDV">LDV</option>
+                                    <option value="LEXUS">LEXUS</option>
+                                    <option value="LOTUS">LOTUS</option>
+                                    <option value="MAHINDRA">MAHINDRA</option>
+                                    <option value="MAN">MAN</option>
+                                    <option value="MARUTI">MARUTI</option>
+                                    <option value="MASERATI">MASERATI</option>
+                                    <option value="MATRA">MATRA</option>
+                                    <option value="MAZDA">MAZDA</option>
+                                    <option value="MCC">MCC</option>
+                                    <option value="MEGA">MEGA</option>
+                                    <option value="MERCEDES">MERCEDES</option>
+                                    <option value="MG">MG</option>
+                                    <option value="MIA">MIA</option>
+                                    <option value="MINI">MINI</option>
+                                    <option value="MITSUBISHI">MITSUBISHI</option>
+                                    <option value="MPM MOTORS">MPM MOTORS</option>
+                                    <option value="NISSAN">NISSAN</option>
+                                    <option value="OPEL">OPEL</option>
+                                    <option value="PANHARD">PANHARD</option>
+                                    <option value="PEUGEOT">PEUGEOT</option>
+                                    <option value="PIAGGIO">PIAGGIO</option>
+                                    <option value="PONTIAC">PONTIAC</option>
+                                    <option value="PORSCHE">PORSCHE</option>
+                                    <option value="PROTON">PROTON</option>
+                                    <option value="RENAULT">RENAULT</option>
+                                    <option value="ROVER">ROVER</option>
+                                    <option value="SAAB">SAAB</option>
+                                    <option value="SANTANA">SANTANA</option>
+                                    <option value="SEAT">SEAT</option>
+                                    <option value="SKODA">SKODA</option>
+                                    <option value="SMART">SMART</option>
+                                    <option value="SSANGYONG">SSANGYONG</option>
+                                    <option value="SUBARU">SUBARU</option>
+                                    <option value="SUNBEAM">SUNBEAM</option>
+                                    <option value="SUZUKI">SUZUKI</option>
+                                    <option value="TALBOT">TALBOT</option>
+                                    <option value="TATA">TATA</option>
+                                    <option value="TESLA">TESLA</option>
+                                    <option value="THINK">THINK</option>
+                                    <option value="TOYOTA">TOYOTA</option>
+                                    <option value="TRIUMPH">TRIUMPH</option>
+                                    <option value="UMM">UMM</option>
+                                    <option value="VOLKSWAGEN">VOLKSWAGEN</option>
+                                    <option value="VOLVO">VOLVO</option>
+                                    <option value="ZASTAVA">ZASTAVA</option>
+                                    <option value="ZAZ">ZAZ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="version" class="devis_form-label">Version</label>
+                                <select name="version" id="version" class="devis_form-input disabled" disabled>
+                                    <option value="" selected="selected">- Choisir -</option>
+                                    <option value="ALEKO">ALEKO</option>
+                                    <option value="ALFA ROMEO">ALFA ROMEO</option>
+                                    <option value="ALPINE RENAULT">ALPINE RENAULT</option>
+                                    <option value="ARO">ARO</option>
+                                    <option value="ASIA">ASIA</option>
+                                    <option value="ASTON MARTIN">ASTON MARTIN</option>
+                                    <option value="AUDI">AUDI</option>
+                                    <option value="AUSTIN">AUSTIN</option>
+                                    <option value="AUTOBIANCHI">AUTOBIANCHI</option>
+                                    <option value="AUVERLAND">AUVERLAND</option>
+                                    <option value="BEDFORD">BEDFORD</option>
+                                    <option value="BEE BEE AUTOMOTIVE">BEE BEE AUTOMOTIVE</option>
+                                    <option value="BENTLEY">BENTLEY</option>
+                                    <option value="BERTONE">BERTONE</option>
+                                    <option value="BMW">BMW</option>
+                                    <option value="BUICK">BUICK</option>
+                                    <option value="CADILLAC">CADILLAC</option>
+                                    <option value="CHEVROLET">CHEVROLET</option>
+                                    <option value="CHRYSLER">CHRYSLER</option>
+                                    <option value="CITROEN">CITROEN</option>
+                                    <option value="COURB">COURB</option>
+                                    <option value="CUPRA">CUPRA</option>
+                                    <option value="DACIA">DACIA</option>
+                                    <option value="DAEWOO">DAEWOO</option>
+                                    <option value="DAF">DAF</option>
+                                    <option value="DAIHATSU">DAIHATSU</option>
+                                    <option value="DAIMLER">DAIMLER</option>
+                                    <option value="DATSUN">DATSUN</option>
+                                    <option value="DODGE">DODGE</option>
+                                    <option value="DS">DS</option>
+                                    <option value="EBRO">EBRO</option>
+                                    <option value="FIAT">FIAT</option>
+                                    <option value="FISKER">FISKER</option>
+                                    <option value="FORD">FORD</option>
+                                    <option value="FSO-POLSKI">FSO-POLSKI</option>
+                                    <option value="GAC GONOW">GAC GONOW</option>
+                                    <option value="GME">GME</option>
+                                    <option value="GRANDIN">GRANDIN</option>
+                                    <option value="HONDA">HONDA</option>
+                                    <option value="HYUNDAI">HYUNDAI</option>
+                                    <option value="INFINITI">INFINITI</option>
+                                    <option value="INNOCENTI">INNOCENTI</option>
+                                    <option value="ISUZU">ISUZU</option>
+                                    <option value="IVECO">IVECO</option>
+                                    <option value="JAGUAR">JAGUAR</option>
+                                    <option value="JEEP">JEEP</option>
+                                    <option value="KIA">KIA</option>
+                                    <option value="LADA">LADA</option>
+                                    <option value="LANCIA">LANCIA</option>
+                                    <option value="LAND ROVER">LAND ROVER</option>
+                                    <option value="LDV">LDV</option>
+                                    <option value="LEXUS">LEXUS</option>
+                                    <option value="LOTUS">LOTUS</option>
+                                    <option value="MAHINDRA">MAHINDRA</option>
+                                    <option value="MAN">MAN</option>
+                                    <option value="MARUTI">MARUTI</option>
+                                    <option value="MASERATI">MASERATI</option>
+                                    <option value="MATRA">MATRA</option>
+                                    <option value="MAZDA">MAZDA</option>
+                                    <option value="MCC">MCC</option>
+                                    <option value="MEGA">MEGA</option>
+                                    <option value="MERCEDES">MERCEDES</option>
+                                    <option value="MG">MG</option>
+                                    <option value="MIA">MIA</option>
+                                    <option value="MINI">MINI</option>
+                                    <option value="MITSUBISHI">MITSUBISHI</option>
+                                    <option value="MPM MOTORS">MPM MOTORS</option>
+                                    <option value="NISSAN">NISSAN</option>
+                                    <option value="OPEL">OPEL</option>
+                                    <option value="PANHARD">PANHARD</option>
+                                    <option value="PEUGEOT">PEUGEOT</option>
+                                    <option value="PIAGGIO">PIAGGIO</option>
+                                    <option value="PONTIAC">PONTIAC</option>
+                                    <option value="PORSCHE">PORSCHE</option>
+                                    <option value="PROTON">PROTON</option>
+                                    <option value="RENAULT">RENAULT</option>
+                                    <option value="ROVER">ROVER</option>
+                                    <option value="SAAB">SAAB</option>
+                                    <option value="SANTANA">SANTANA</option>
+                                    <option value="SEAT">SEAT</option>
+                                    <option value="SKODA">SKODA</option>
+                                    <option value="SMART">SMART</option>
+                                    <option value="SSANGYONG">SSANGYONG</option>
+                                    <option value="SUBARU">SUBARU</option>
+                                    <option value="SUNBEAM">SUNBEAM</option>
+                                    <option value="SUZUKI">SUZUKI</option>
+                                    <option value="TALBOT">TALBOT</option>
+                                    <option value="TATA">TATA</option>
+                                    <option value="TESLA">TESLA</option>
+                                    <option value="THINK">THINK</option>
+                                    <option value="TOYOTA">TOYOTA</option>
+                                    <option value="TRIUMPH">TRIUMPH</option>
+                                    <option value="UMM">UMM</option>
+                                    <option value="VOLKSWAGEN">VOLKSWAGEN</option>
+                                    <option value="VOLVO">VOLVO</option>
+                                    <option value="ZASTAVA">ZASTAVA</option>
+                                    <option value="ZAZ">ZAZ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="stationnement" class="devis_form-label">Stationnement</label>
+                                <select name="stationnement" id="stationnement" class="devis_form-input">
+                                    <option value="" selected="selected">- Choisir -</option>
+                                    <option value="001">Garage fermé individuel</option>
+                                    <option value="002">Parking fermé collectif</option>
+                                    <option value="003">Jardin clos privé</option>
+                                    <option value="004">Parking collectif clos en plein air</option>
+                                    <option value="005">Voie publique</option>
+                                    <option value="006">Jardin non clos privé avec ou sans abri</option>
+                                    <option value="007">Garage public surveillé</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="usage" class="devis_form-label">Usage</label>
+                                <select name="usage" id="usage" class="devis_form-input">
+                                    <option value="" selected="selected">- Choisir -</option>
+                                    <option value="001">Tous déplacements</option>
+                                    <option value="002">Privé</option>
+                                    <option value="003">Privé + Trajet travail</option>
+                                    <option value="004">Privé + Professionnel</option>
+                                    <option value="005">Professionnel</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="g-recaptcha" data-sitekey="">
+                        </div>
+                        <br />
+                        <div id="devis-form-response"></div>
+                    </div>
+                    <div class="checkbox d-flex align-items-center mb-5">
+                        <input name="condition" type="checkbox" style="width: 4rem; height: 2rem;" />
+                        <span class="devis_form-label" style="font-size: 1.2rem; margin-bottom: .8rem;">
+                            En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                            de vos données par ce site *</span>
+                        <i class="fa fa-info-square" aria-hidden="true"></i>
+                    </div>
+                    <div class="d-flex justify-content-center mx-auto">
+                        <button type="submit" class="nav-link Navbar_nav-btn form-submit"
+                            value="Submit">Comparer les assurances</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+    </div>
+
+    <footer class="footer">
+    <div class="container-fluid">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-4">
+                <div class="footer_content">
+                    <h3 class="footer_content-title">Liens utiles</h3>
+                    <ul class="footer_content-ul">
+                        <li class="footer_content-li">
+                            <a href="./index.html" class="footer_content-li--link">Accueil</a></li>
+                        <li class="footer_content-li"><a href="./assurance-decennale.html" class="footer_content-li--link">Assurance décennale</a></li>
+                        <li class="footer_content-li"><a href="./complementaire-sante.html" class="footer_content-li--link">Complémentaire santé</a></li>
+                        <li class="footer_content-li"><a href="./contact.html" class="footer_content-li--link">Contact & Devis</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer_logo">
+                    <img src="./assets/img/footer-logo.png" alt="" class="footer_logo-img">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer_content">
+                    <h3 class="footer_content-title text-right">Informations</h3>
+                    <ul class="footer_content-ul">
+                        <li class="footer_content-li text-right">
+                            Groupe WHD Courtage
+                        </li>
+                        <li class="footer_content-li text-right">
+                            1 allée des cèdres - 91220 Brétigny sur Orge
+                        </li>
+                        <li class="footer_content-li text-right">
+                            <a href="tel:01 85 53 75 91" class="footer_content-li--link text-right">01 85 53 75 91</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="../assets/js/index.js"></script>
+<!-- <script src="../assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+  </body>
+</html>

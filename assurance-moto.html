@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./assets/js/popper.min.js"></script>
+    <script defer src="./assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <title></title>
+<meta property="og:title" content="" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="" />
+<meta property="og:description" content="" />
+<meta name="keywords" content="" />
+<link rel="canonical" href="http://localhost:4000/assurance-moto" />
+<meta property="og:url" content="http://localhost:4000/assurance-moto" />
+<meta property="og:site_name" content="BHInternet" />
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"url":"http://localhost:4000/assurance-moto",
+"description":"",
+"name":""
+}
+</script>
+
+</head>
+
+  <body>
+    <section class="Navbar navbar-main Navbar">
+    <nav class="navbar navbar-expand-lg Navbar p-0">
+        <div class="container-fluid">
+            <div class="Navbar_image">
+                <a href="./index.html"><img src="./assets/img/logo.png" class="Navbar_image-img"
+                        alt="" /></a>
+            </div>
+            <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars fa-2x toggle-button" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+                <ul class="navbar-nav Navbar_nav ml-auto">
+                    <li class="nav-item Navbar_nav-item">
+                        <a class="nav-link Navbar_nav-link" href="./index.html">ACCUEIL</a>
+                    </li>
+                    <li class="nav-item Navbar_nav-item">
+                        <a class="nav-link Navbar_nav-link" href="./assurance-decennale.html">ASSURANCE DÉCENNALE</a>
+                    </li>
+                    <li class="nav-item Navbar_nav-item">
+                        <a class="nav-link Navbar_nav-link" href="./complementaire-sante.html">COMPLÉMENTAIRE SANTÉ</a>
+                    </li>
+                    <li class="nav-item Navbar_nav-item">
+                        <a class="nav-link Navbar_nav-link" href="./contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item Navbar_nav-item">
+                        <a class="nav-link Navbar_nav-btn" href="./devis.html">DEVIS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+    
+
+    <div class="">
+        <section class="banner">
+    <div class="container-fluid">
+        <div class="banner_content">
+            <h1 class="banner_content-title">Artensia Assurance est capable de vous assurer quel que soit votre besoin,
+                particulier ou pro, remplissez ce formulaire pour être contacté dans les 24h</h1>
+        </div>
+    </div>
+</section>
+<section class="devis devis_form">
+    <div class="container mt-5">
+        <form class="form" id="devisForm" method="post" action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
+            <input type="hidden" name="lang" value="fr">
+            <input type="hidden" name="type" value="devis">
+            <input type="hidden" name="firstName" value="" />
+            <input type="hidden" name="website" value="184">
+            <input type="hidden" name="redirectUrl" value="/">
+            <input type="hidden" name="redirectUrl" value="/" />
+            <input type="hidden" name="key" value="">
+            <input type="hidden" name="website" value="184" />
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="name" class="devis_form-label">Nature du besoin</label>
+                                <select name="nature-du-besoin" id="nature-du-besoin" class="devis_form-input">
+                                    <option value="" disabled="" selected="">---</option>
+                                    <optgroup label="Santé">
+                                        <option value="Mutuelle individuelle">Mutuelle individuelle</option>
+                                        <option value="Surcomplémentaire santé">Surcomplémentaire santé</option>
+                                        <option value="Mutuelle entreprise">Mutuelle entreprise</option>
+                                    </optgroup>
+                                    <optgroup label="Prévoyance">
+                                        <option value="Garantie obsèques">Garantie obsèques</option>
+                                        <option value="Capital décès">Capital décès</option>
+                                        <option value="Assurance dépendance">Assurance dépendance</option>
+                                        <option value="Garantie accident de la vie">Garantie accident de la vie</option>
+                                        <option value="Prévoyance pro">Prévoyance pro</option>
+                                        <option value="Indemnités Journalières Hospitalières">Indemnités Journalières
+                                            Hospitalières</option>
+                                        <option value="Protection juridique">Protection juridique</option>
+                                        <option value="Responsabilité Civile">Responsabilité Civile</option>
+                                        <option value="Assurance scolaire">Assurance scolaire</option>
+                                        <option value="Assurance frais généraux">Assurance frais généraux</option>
+                                        <option value="Prévoyance collective">Prévoyance collective</option>
+                                    </optgroup>
+                                    <optgroup label="Crédit">
+                                        <option value="Assurance emprunteur">Assurance emprunteur</option>
+                                        <option value="Crédit finance personnel">Crédit finance personnel</option>
+                                    </optgroup>
+                                    <optgroup label="Animaux">
+                                        <option value="Assurance chiens &amp; chats">Assurance chiens &amp; chats
+                                        </option>
+                                        <option value="Responsabilité Civile Chasse">Responsabilité Civile Chasse
+                                        </option>
+                                    </optgroup>
+                                    <optgroup label="Voyage / Expat">
+                                        <option value="Assurance voyage">Assurance voyage</option>
+                                        <option value="Assurance expatriés">Assurance expatriés</option>
+                                        <option value="Assurance PVT">Assurance PVT</option>
+                                        <option value="Assurance impatriés">Assurance impatriés</option>
+                                        <option value="Assurance rapatriement de corps">Assurance rapatriement de corps
+                                        </option>
+                                        <option value="Assurance expatriés collective">Assurance expatriés collective
+                                        </option>
+                                    </optgroup>
+                                    <optgroup label="Habitation">
+                                        <option value="Multirisque habitation">Multirisque habitation</option>
+                                        <option value="Garantie loyer impayé">Garantie loyer impayé</option>
+                                        <option value="Assurance multimédia">Assurance multimédia</option>
+                                        <option value="Assurance propriétaire non occupant">Assurance propriétaire non
+                                            occupant</option>
+                                        <option value="Assurance dommage ouvrage (Personne physique)">Assurance dommage
+                                            ouvrage (Personne physique)</option>
+                                        <option value="Assurance garage">Assurance garage</option>
+                                        <option value="Multi-risques immeuble">Multi-risques immeuble</option>
+                                    </optgroup>
+                                    <optgroup label="Véhicules">
+                                        <option value="Assurance auto">Assurance auto</option>
+                                        <option value="Assurance moto" selected="">Assurance moto</option>
+                                        <option value="Assurance bateau">Assurance bateau</option>
+                                        <option value="Assurance flotte auto">Assurance flotte auto</option>
+                                        <option value="Assurance véhicule agricole">Assurance véhicule agricole</option>
+                                    </optgroup>
+                                    <optgroup label="Epargne">
+                                        <option value="Assurance retraite">Assurance retraite</option>
+                                        <option value="Assurance vie">Assurance vie</option>
+                                        <option value="Retraite collective">Retraite collective</option>
+                                        <option value="Epargne salariale">Epargne salariale</option>
+                                        <option value="Défiscalisation">Défiscalisation</option>
+                                    </optgroup>
+                                    <optgroup label="Professionnel">
+                                        <option value="Responsabilité Civile Professionnelle">Responsabilité Civile
+                                            Professionnelle</option>
+                                        <option value="Assurance homme clé">Assurance homme clé</option>
+                                        <option value="Garantie décennale">Garantie décennale</option>
+                                        <option value="Multi-risques professionnels">Multi-risques professionnels
+                                        </option>
+                                        <option value="Assurance bâtiments">Assurance bâtiments</option>
+                                        <option value="Assurance dommage ouvrage (Personne morale)">Assurance dommage
+                                            ouvrage (Personne morale)</option>
+                                        <option value="Assurance associés">Assurance associés</option>
+                                        <option value="Assurance Prud'homale">Assurance Prud'homale</option>
+                                        <option value="Assurance intempéries">Assurance intempéries</option>
+                                    </optgroup>
+                                    <option value="Autres">Autre</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="phone" class="devis_form-label">Téléphone</label>
+                                <input type="number" class="devis_form-input" id="phone" name="phone"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name" class="devis_form-label">Nom</label>
+                                <input type="text" class="devis_form-input" id="name" name="name"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="lastname" class="devis_form-label">Prénom</label>
+                                <input type="text" class="devis_form-input" id="lastname" name="lastname"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="email" class="devis_form-label">Email</label>
+                                <input type="email" class="devis_form-input" id="email" name="email"
+                                    required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="g-recaptcha" data-sitekey="">
+                        </div>
+                        <br />
+                        <div id="devis-form-response"></div>
+                    </div>
+                    <div class="checkbox d-flex align-items-center mb-5">
+                        <input name="condition" type="checkbox" style="width: 4rem; height: 2rem;" />
+                        <span class="devis_form-label" style="font-size: 1.2rem; margin-bottom: .8rem;">
+                            En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                            de vos données par ce site *</span>
+                        <i class="fa fa-info-square" aria-hidden="true"></i>
+                    </div>
+                    <div class="d-flex justify-content-center mx-auto">
+                        <button type="submit" class="nav-link Navbar_nav-btn form-submit" value="Submit">Envoyer</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+    </div>
+
+    <footer class="footer">
+    <div class="container-fluid">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-4">
+                <div class="footer_content">
+                    <h3 class="footer_content-title">Liens utiles</h3>
+                    <ul class="footer_content-ul">
+                        <li class="footer_content-li">
+                            <a href="./index.html" class="footer_content-li--link">Accueil</a></li>
+                        <li class="footer_content-li"><a href="./assurance-decennale.html" class="footer_content-li--link">Assurance décennale</a></li>
+                        <li class="footer_content-li"><a href="./complementaire-sante.html" class="footer_content-li--link">Complémentaire santé</a></li>
+                        <li class="footer_content-li"><a href="./contact.html" class="footer_content-li--link">Contact & Devis</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer_logo">
+                    <img src="./assets/img/footer-logo.png" alt="" class="footer_logo-img">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer_content">
+                    <h3 class="footer_content-title text-right">Informations</h3>
+                    <ul class="footer_content-ul">
+                        <li class="footer_content-li text-right">
+                            Groupe WHD Courtage
+                        </li>
+                        <li class="footer_content-li text-right">
+                            1 allée des cèdres - 91220 Brétigny sur Orge
+                        </li>
+                        <li class="footer_content-li text-right">
+                            <a href="tel:01 85 53 75 91" class="footer_content-li--link text-right">01 85 53 75 91</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="../assets/js/index.js"></script>
+<!-- <script src="../assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+  </body>
+</html>

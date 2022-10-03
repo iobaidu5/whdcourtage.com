@@ -22,14 +22,14 @@
 <meta name="description" content="" />
 <meta property="og:description" content="" />
 <meta name="keywords" content="" />
-<link rel="canonical" href="http://localhost:4000/devis" />
-<meta property="og:url" content="http://localhost:4000/devis" />
+<link rel="canonical" href="http://localhost:4000/devis-professionnelle" />
+<meta property="og:url" content="http://localhost:4000/devis-professionnelle" />
 <meta property="og:site_name" content="BHInternet" />
 <script type="application/ld+json">
 {
 "@context":"https://schema.org",
 "@type":"WebSite",
-"url":"http://localhost:4000/devis",
+"url":"http://localhost:4000/devis-professionnelle",
 "description":"",
 "name":""
 }
@@ -78,85 +78,102 @@
         <section class="banner">
     <div class="container-fluid">
         <div class="banner_content">
-            <h1 class="banner_content-title">OBTENEZ UN DEVIS RAPIDE & GRATUIT</h1>
+            <h1 class="banner_content-title">NOTRE PREVOYANCE PROFESSIONNELLE</h1>
         </div>
     </div>
 </section>
-<section class="offers devis">
-    <div class="container">
-        <div class="offers_content">
-            <h2 class="menu_content-title text-center">Nos différentes offres d’assurance</h2>
-            <hr class="menu_content-divider mx-auto">
-        </div>
-        <div class="offers_cards">
-            <div class="row">
-                <div class="col-md-6 to-space-1200">
-                    <div class="offers_card">
-                        <a href="./assurance-auto-moto.html" class="offers_link">
-                            <div class="offers_card-content">
-                                <img src="./assets/img/o1.png" alt="" class="offers_card-content--icon">
-                                <h3 class="offers_card-content--title">ASSURANCE
-                                    AUTO / MOTO</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 to-space-1200">
-                    <div class="offers_card">
-                        <a href="./devis-decennale.html" class="offers_link">
-                            <div class="offers_card-content">
-                                <img src="./assets/img/o2.png" alt="" class="offers_card-content--icon">
-                                <h3 class="offers_card-content--title">ASSURANCE
-                                    DÉCENNALE</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 to-space-1200">
-                    <div class="offers_card">
-                        <a href="./devis-individuel.html" class="offers_link">
-                            <div class="offers_card-content">
-                                <img src="./assets/img/o3.png" alt="" class="offers_card-content--icon">
-                                <h3 class="offers_card-content--title">ASSURANCE
-                                    SANTÉ</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 to-space-1200">
-                    <div class="offers_card">
-                        <a href="./devis-professionnelle.html" class="offers_link">
-                            <div class="offers_card-content">
-                                <img src="./assets/img/o4.png" alt="" class="offers_card-content--icon">
-                                <h3 class="offers_card-content--title">ASSURANCE
-                                    PROFESSIONNELLE</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 to-space-1200">
-                    <div class="offers_card">
-                        <a href="./devis-personnalise-habitation.html" class="offers_link">
-                            <div class="offers_card-content">
-                                <img src="./assets/img/o5.png" alt="" class="offers_card-content--icon">
-                                <h3 class="offers_card-content--title">ASSURANCE
-                                    HABITATION</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 to-space-1200">
-                    <div class="offers_card">
-                        <a href="./assurances-autres.html" class="offers_link">
-                            <div class="offers_card-content">
-                                <img src="./assets/img/o6.png" alt="" class="offers_card-content--icon">
-                                <h3 class="offers_card-content--title">DIVERSES ASSURANCESs</h3>
-                            </div>
-                        </a>
-                    </div>
+<section class="menu mt-5">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-12 m-0 p-0">
+                <div class="menu_content">
+                    <h2 class="menu_content-title text-center">DEVIS GRATUIT PREVOYANCE PROFESSIONNELLE</h2>
+                    <h3 class="menu_content-head text-center">Devis gratuit Prévoyance pro</h3>
+                    <hr class="menu_content-divider mx-auto">
                 </div>
             </div>
         </div>
+    </div>
+</section>
+<section class="devis devis_form pt-0">
+    <div class="container mt-5">
+        <form class="form" id="devisForm" method="post" action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
+            <input type="hidden" name="lang" value="fr">
+            <input type="hidden" name="type" value="devis">
+            <input type="hidden" name="firstName" value="" />
+            <input type="hidden" name="website" value="184">
+            <input type="hidden" name="redirectUrl" value="/">
+            <input type="hidden" name="redirectUrl" value="/" />
+            <input type="hidden" name="key" value="">
+            <input type="hidden" name="website" value="184" />
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <h2 class="devis_form-title my-3">Assuré</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name" class="devis_form-label">Date de naissance *</label>
+                                <input type="date" class="devis_form-input" id="date-de-naissance"
+                                    name="date-de-naissance" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name" class="devis_form-label">Revenu annuel net</label>
+                                <input type="number" class="devis_form-input w-50 h-5 d-inline" id="revenu-annuel-net"
+                                    name="revenu-annuel-net" required> <span class="cards_content-p"> &nbsp;
+                                    &nbsp;€</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name" class="devis_form-label">Profession</label>
+                                <input type="text" class="devis_form-input" id="profession" name="profession" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name" class="devis_form-label">Fumeur ?</label>
+                                <select name="fumeur" id="fumeur" class="devis_form-input">
+                                    <option value="" selected="selected">Non communiqué</option>
+                                    <option value="1">Oui</option>
+                                    <option value="0">Non</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name" class="devis_form-label">Déplacements pro ?</label>
+                                <select name="deplacements" id="deplacements" class="devis_form-input">
+                                    <option value="" selected="selected">Non communiqué</option>
+                                    <option value="1">Oui</option>
+                                    <option value="0">Non</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="g-recaptcha" data-sitekey="">
+                        </div>
+                        <br />
+                        <div id="devis-form-response"></div>
+                    </div>
+                    <div class="checkbox d-flex align-items-center mb-5">
+                        <input name="condition" type="checkbox" style="width: 4rem; height: 2rem;" />
+                        <span class="devis_form-label" style="font-size: 1.2rem; margin-bottom: .8rem;">
+                            En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                            de vos données par ce site *</span>
+                        <i class="fa fa-info-square" aria-hidden="true"></i>
+                    </div>
+                    <div class="d-flex justify-content-center mx-auto">
+                        <button type="submit" class="nav-link Navbar_nav-btn form-submit" value="Submit">Comparer les
+                            assurances</button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 </section>
     </div>
